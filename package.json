@@ -1,0 +1,33 @@
+{
+  "name": "dom-mutation-notifier",
+  "version": "0.1.0",
+  "author": "Braveg1rl <braveg1rl@outlook.com>",
+  "description": "Friendly interface for MutationObserver.",
+  "keywords": [],
+  "license": "MIT",
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.12.2",
+    "mocha": "^3.2.x",
+    "pre-commit": "^1.2.2"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "6.x.x"
+  },
+  "main": "lib/dom-mutation-notifier.js",
+  "scripts": {
+    "build": "mkdir -p lib && rm -rf lib/* && node_modules/.bin/coffee --compile -m --output lib/ src/",
+    "jumpstart": "mkdir -p src && touch src/dom-mutation-notifier.coffee && mkdir -p test && touch test/dom-mutation-notifier.coffee && npm install",
+    "prepublish": "npm test",
+    "pretest": "npm run build",
+    "reinstall": "rm -rf node_modules/ && npm install",
+    "test": "node_modules/.bin/mocha",
+    "watch": "node_modules/.bin/coffee --watch --compile --output lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/braveg1rl/dom-mutation-notifier.git"
+  }
+}

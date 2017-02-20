@@ -1,5 +1,7 @@
 # dom-mutation-notifier [![Build Status](https://travis-ci.org/braveg1rl/dom-mutation-notifier.png?branch=master)](https://travis-ci.org/braveg1rl/dom-mutation-notifier) [![Dependency Status](https://david-dm.org/braveg1rl/dom-mutation-notifier.png)](https://david-dm.org/braveg1rl/dom-mutation-notifier)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/braveg1rl/dom-mutation-notifier.svg)](https://greenkeeper.io/)
+
 Friendly interface for [MutationObserver](https://developer.mozilla.org/en/docs/Web/API/MutationObserver).
 Eight events are implemented: `(element|attribute|text|comment)(Added|Removed)`
 
